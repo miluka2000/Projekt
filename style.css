@@ -1,0 +1,62 @@
+header{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #443EB3;
+}
+
+.main{
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 100vh;
+    background-color: aliceblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #090979;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #403e3e;
+  }
+  
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-weight: bold;
+  }
+
+.navbar a:hover{
+    font-size: 30px;
+    transition: 1.5s;
+}
+.navbar a:last-child{
+    color: red;
+}
+.elbeszelo{
+    padding: 15px;
+}
+h1{ text-align: center;
+font-weight: bold;
+}
+.elbeszelo p{
+    font-size: 20px;
+    font-weight: bold;
+}
