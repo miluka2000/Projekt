@@ -9,13 +9,13 @@ header{
     justify-content: center;
     background-color: #443EB3;
 }
-
 .main{
     border: 2px solid black;
     margin-left: 200px;
     margin-right: 200px;
     height: 100vh;
     background-color: aliceblue;
+    height: 100%;
 }
 *{
     margin: 0;
@@ -23,8 +23,8 @@ header{
     box-sizing: border-box;
 }
 body{
-    background: #090979;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to bottom, #3a47d5, #090979);
+    font-family: 'Poppins', sans-serif;
 }
 .navbar {
     display: flex;
@@ -33,30 +33,163 @@ body{
     padding: 0;
     margin: 0;
     background-color: #403e3e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
-  
-  
   .navbar a {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 15px;
     font-weight: bold;
   }
-
-.navbar a:hover{
-    font-size: 30px;
-    transition: 1.5s;
+.navbar a:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
-.navbar a:last-child{
+.navbar a:first-child{
     color: red;
 }
 .elbeszelo{
     padding: 15px;
 }
 h1{ text-align: center;
-font-weight: bold;
+    font-weight: bold;
 }
 .elbeszelo p{
     font-size: 20px;
     font-weight: bold;
+}
+p{
+    margin: 15px;
+}
+li{
+    margin-left: 35px;
+}
+.menu{
+    width: 500px;
+    height: 300px;
+    order: 1;
+}
+.jatekmodok{
+ 
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+}
+ol{
+    order: 1;
+}
+@media (max-width: 768px) {
+    .main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.navbar a:hover {
+    transform: scale(1.1);
+    color: #FFD700;
+}
+.hero, .game-info, .modes {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+.mode-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.mode-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.mode-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
+}
+.game-modes, .game-analysis, .rank-system {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+/* Játékmódok kártyás elrendezése */
+.mode-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mode-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.casual {
+    border-left: 5px solid #FFD700; /* Casual kiemelése */
+}
+
+.competitive {
+    border-left: 5px solid #FF4500; /* Competitive kiemelése */
+}
+
+
+.rank-table th, .rank-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rank-table th {
+    background: #443EB3;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rank-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.rank-table tr:hover {
+    border: 5px solid #FFD700; 
+    background: rgba(255, 255, 255, 0.2);
+}
+.rank-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+.rank-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.rank-table th, .rank-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    vertical-align: middle; /* Segít az igazításban */
+}
+
+.rank-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
 }
