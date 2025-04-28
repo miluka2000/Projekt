@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket League - Kérdőív</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-card">
+            <h1 class="kerdoh1">Rocket League Kérdőív</h1>
+
+            <div class="input-group">
+                <label for="name">Neved</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Életkorod</label>
+                <input type="number" id="age" name="age" min="6" max="99" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email címed</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="platform">Milyen platformon játszol?</label>
+                <select id="platform" name="platform" required>
+                    <option value="">Válassz...</option>
+                    <option value="pc">PC</option>
+                    <option value="playstation">PlayStation</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="switch">Nintendo Switch</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="rank">Jelenlegi rangod</label>
+                <select id="rank" name="rank" required>
+                    <option value="">Válassz...</option>
+                    <option>Bronze</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                    <option>Platinum</option>
+                    <option>Diamond</option>
+                    <option>Champion</option>
+                    <option>Grand Champion</option>
+                    <option>Supersonic Legend</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="hours">Hány órád van összesen?</label>
+                <input type="number" id="hours" name="hours" min="0" required>
+            </div>
+
+            <div class="input-group">
+                <label for="main-car">Kedvenc autód</label>
+                <input type="text" id="main-car" name="main-car" required>
+            </div>
+
+            <div class="input-group">
+                <label>Milyen gyakran játszol?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="frequency" value="daily" required> Naponta</label>
+                    <label><input type="radio" name="frequency" value="weekly"> Hetente</label>
+                    <label><input type="radio" name="frequency" value="monthly"> Havonta</label>
+                    <label><input type="radio" name="frequency" value="rarely"> Ritkán</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Kedvenc játékmódok</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="mode" value="1v1"> 1v1</label>
+                    <label><input type="checkbox" name="mode" value="2v2"> 2v2</label>
+                    <label><input type="checkbox" name="mode" value="3v3"> 3v3</label>
+                    <label><input type="checkbox" name="mode" value="rumble"> Rumble</label>
+                    <label><input type="checkbox" name="mode" value="dropshot"> Dropshot</label>
+                    <label><input type="checkbox" name="mode" value="snowday"> Snow Day</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="favorite-map">Kedvenc pályád</label>
+                <input type="text" id="favorite-map" name="favorite-map">
+            </div>
+
+            <div class="input-group">
+                <label for="feedback">Véleményed a játékról</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="kerdobutton">Beküldés</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -57,6 +57,7 @@ body{
 h1{ text-align: center;
     font-weight: bold;
     color: black;
+    text-decoration: none;
 }
 .elbeszelo p{
     font-size: 20px;
@@ -346,3 +347,165 @@ h2 {
 .rankname{
     margin-top: 20px;
 }
+button{
+    height: 100px;
+    width: 300px;
+    border: 1ps solid black;
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: #00FFCB;
+}
+.kozep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #443EB3;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.kerdoh1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00c6ff;
+    background: #fff;
+}
+
+.radio-group, .checkbox-group {
+    margin-top: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-weight: normal;
+    color: #444;
+}
+
+.kerdobutton {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.kerdobutton:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.holographic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #000;
+  }
+  
+  .holographic-card {
+    width: 300px;
+    height: 200px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .holographic-card h2 {
+    color: #0ff;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .holographic-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg, 
+      transparent, 
+      transparent 30%, 
+      rgba(0,255,255,0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  
+  .holographic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+  }
+  
+  .holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+  }
