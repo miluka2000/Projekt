@@ -161,7 +161,7 @@ ol{
     background: rgba(255, 255, 255, 0.05);
 }
 
-.rank-table tr:hover {
+.rank-table tbody tr:hover {
     border: 5px solid #FFD700; 
     background: rgba(255, 255, 255, 0.2);
 }
