@@ -510,3 +510,35 @@ textarea:focus {
     opacity: 1;
     transform: rotate(-45deg) translateY(100%);
   }
+
+.current-page {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #403e3e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.back-home {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.back-home .kerdobutton {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #443EB3;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-home .kerdobutton:hover {
+    background-color: #342a93;
+}
