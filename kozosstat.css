@@ -1,0 +1,112 @@
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #0ff;
+    color: white;
+}
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+th {
+    background-color: #0ff;
+    color: #111;
+    font-size: 18px;
+}
+tr:nth-child(even) {
+    background-color: #333;
+}
+tr:hover {
+    background-color: rgb(95, 95, 95);
+    transition: 0.3s;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #0ff;
+    color: #111;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+}
+header{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #443EB3;
+}
+.main{
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 100vh;
+    background-color: aliceblue;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, #3a47d5, #090979);
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #403e3e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-weight: bold;
+  }
+.navbar a:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.navbar a:first-child{
+    color: red;
+}
+.elbeszelo{
+    padding: 15px;
+}
+h1{ text-align: center;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.current-page {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #403e3e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

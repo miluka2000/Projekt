@@ -1,35 +1,79 @@
-<section class="hero">
-    <h1>Üdvözlünk a Rocket League statisztikai oldalán! 🎮🏆</h1>
-    <p>Itt megtalálod Hollik Milán és Moldovan Sebastian statisztikáit, mechanikáit és legjobb eredményeit.</p>
-</section>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reszponzív Weboldal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to right, #0ff, #0077ff);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
 
-<section class="game-info">
-    <h1>Miről is szól a játék?</h1>
-    <p>A "Rocket League" egy csapatban vagy akár egyedül is játszható játék.</p>
-    <p>Egy autót irányítva kell a labdát berúgni a kapuba.</p>     
-    <p>Egyszerűnek tűnik, nem igaz? A Rocket League már több éve gyarapítja a globális játékmezőnyt.</p>
-    <p>A mechanikák, vagyis a játékosok több játszott éve alatt kifejlődő technikái teszik időről időre érdekesebbé a játékot.</p>
-</section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Weboldal Projekt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projektek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Csapat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<section class="modes">
-    <h2>🎮 Játékmódok</h2>
-    <div class="mode-container">
-        <div class="mode-card">
-            <h3>Casual</h3>
-            <ul>
-                <li>1v1</li>
-                <li>2v2</li>
-                <li>3v3</li>
-                <li>4v4</li>
-            </ul>
+    <section class="hero">
+        <div class="container">
+            <h1>Reszponzív Weboldal Projekt</h1>
+            <p>Határidő: 2025. május 19. 18:00 | Bemutatás: 2025. május 20.</p>
         </div>
-        <div class="mode-card">
-            <h3>Competitive</h3>
-            <ul>
-                <li>1v1</li>
-                <li>2v2</li>
-                <li>3v3</li>
-            </ul>
+    </section>
+
+    <section class="container mt-5">
+        <h2 class="text-center">Projektek Bemutatása</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 1</h5>
+                        <p class="card-text">Rövid leírás a projektről.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 2</h5>
+                        <p class="card-text">Rövid leírás a projektről.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2025 Weboldal Projekt | Minden jog fenntartva</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
