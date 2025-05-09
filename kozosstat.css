@@ -110,3 +110,10 @@ h1{ text-align: center;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+  }
